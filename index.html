@@ -109,13 +109,48 @@
             <h2 class="appointment__title">Записаться</h2>
             <p class="appointment__text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
             <form class="appointment__form" action="https://echo.htmlacademy.ru" method="POST">
-                <p class="appointment__item"><input type="text" name="date" value="" placeholder="08.10.2017"></p>
-                <p class="appointment__item"><input type="text" name="time" value="" placeholder="10:00"></p>
-                <p class="appointment__item"><input type="text" name="name" value="" placeholder="Борода"></p>
-                <p class="appointment__item"><input type="tel" name="phone" value="" placeholder="+7 123 456 78 90"></p>
+                <p class="appointment__item">
+                    Дата
+                    <input type="text" name="date" value="" placeholder="08.10.2017">
+                </p>
+                <p class="appointment__item">
+                    Время
+                    <input type="text" name="time" value="" placeholder="10:00">
+                </p>
+                <p class="appointment__item">
+                    Ваше имя
+                    <input type="text" name="name" value="" placeholder="Борода">
+                </p>
+                <p class="appointment__item">
+                    Телефон
+                    <input type="tel" name="phone" value="" placeholder="+7 123 456 78 90">
+                </p>
                 <button class="button appointment__button" type="submit">Отправить</button>
             </form>
         </section>
+
+        <footer class="page-footer">
+            <p class="page-footer__contacts contacts">
+                Барбершоп «Бородинский»<br>
+                Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                <a class="contacts__link" href="map.html">Как нас найти?</a><br>
+                Телефон: +7 (812) 666-02-66
+            </p>
+            <div class="page-footer__social social">
+                <b class="social__text">Давайте дружить</b>
+                <ul class="social__list">
+                    <li class="social__item"><a href="#" class="social__button"></a></li>
+                    <li class="social__item"><a href="#" class="social__button"></a></li>
+                    <li class="social__item"><a href="#" class="social__button"></a></li>
+                </ul>
+            </div>
+            <p class="page-footer__copyryght copyryght">
+                <b class="copyryght__text">Разработано:</b>
+                <a class="button copyryght__button" href="https://htmlacademy.ru">
+                    HTML academy
+                </a>
+            </p>
+        </footer>
     </main>
 </body>
 
