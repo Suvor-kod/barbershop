@@ -32,8 +32,8 @@
                         <a href="#">Html Academy</a>
                     </li>
                 </ul>
-                <ul main-nav__list user-list>
-                    <li user-list__item>
+                <ul class="main-nav__list user-list">
+                    <li class="user-list__item">
                         <a class="user-list__login" href="#login.html">Войти</a>
                     </li>
                 </ul>
@@ -44,6 +44,7 @@
     <main class="page-main">
         <h1 class="visually-hidden">Барбершоп Бородинский</h1>
 
+        <!-- Преимущества -->
         <section class="advantages">
             <h2 class="visually-hidden">Наши преимущества</h2>
             <ul class="advantages__list">
@@ -65,6 +66,7 @@
             </ul>
         </section>
 
+        <!-- Новости -->
         <section class="news">
             <h2 class="news__title">Новости</h2>
             <ul class="news__list">
@@ -80,6 +82,7 @@
             <a class="button" href="news.html">Все новости</a>
         </section>
 
+        <!-- Фотогалерея -->
         <section class="gallery">
             <h2 class="gallery__title">Фотогалерея</h2>
             <figure class="gallety__list">
@@ -89,6 +92,7 @@
             <span class="button gallery__button gallery__button--next">Вперед</span>
         </section>
 
+        <!-- Контакты -->
         <section class="contact">
             <h2 class="contact__title"></h2>
             <p class="contact__text">
@@ -105,6 +109,7 @@
             <a class="button contact__button" href="contacts.html">Обратная связь</a>
         </section>
 
+        <!-- Запись-форма -->
         <section class="appointment">
             <h2 class="appointment__title">Записаться</h2>
             <p class="appointment__text">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
@@ -128,30 +133,62 @@
                 <button class="button appointment__button" type="submit">Отправить</button>
             </form>
         </section>
-
-        <footer class="page-footer">
-            <p class="page-footer__contacts contacts">
-                Барбершоп «Бородинский»<br>
-                Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                <a class="contacts__link" href="map.html">Как нас найти?</a><br>
-                Телефон: +7 (812) 666-02-66
-            </p>
-            <div class="page-footer__social social">
-                <b class="social__text">Давайте дружить</b>
-                <ul class="social__list">
-                    <li class="social__item"><a href="#" class="social__button"></a></li>
-                    <li class="social__item"><a href="#" class="social__button"></a></li>
-                    <li class="social__item"><a href="#" class="social__button"></a></li>
-                </ul>
-            </div>
-            <p class="page-footer__copyryght copyryght">
-                <b class="copyryght__text">Разработано:</b>
-                <a class="button copyryght__button" href="https://htmlacademy.ru">
-                    HTML academy
-                </a>
-            </p>
-        </footer>
     </main>
+
+    <footer class="page-footer">
+        <p class="page-footer__contacts contacts">
+            Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            <a class="contacts__link" href="map.html">Как нас найти?</a><br>
+            Телефон: +7 (812) 666-02-66
+        </p>
+        <div class="page-footer__social social">
+            <b class="social__text">Давайте дружить</b>
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link social__link--vk" href="https://www.vk.com/">Мы в Вконтакте</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--fb" href="https://www.facebook.com/">Мы в Фейсбуке</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--inst" href="https://www.instagram.com/">Мы в Инстаграме</a>
+                </li>
+            </ul>
+        </div>
+        <p class="page-footer__copyryght copyryght">
+            <b class="copyryght__text">Разработано:</b>
+            <a class="button copyryght__button" href="https://htmlacademy.ru">
+                HTML academy
+            </a>
+        </p>
+    </footer>
+
+    <!-- Разметка попапа вход -->
+    <section class="modal modal-login">
+        <h2 class="modal-login__title">Личный кабинет</h2>
+        <p class="modal-login__text">Введите свой логин и пароль.</p>
+        <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="POST">
+            <label class="modal-login__label" for="">
+                <input class="modal-login__input" type="text" name="login" placeholder="Логин">
+            </label>
+            <label class="modal-login__label" for="">
+                <input class="modal-login__input" type="password" name="password" placeholder="Пароль">
+            </label>
+            <p class="modal-login__info">
+                <input class="visually-hidden" type="checkbox" name="remember">
+                <a class="modal-login__link" href="#">Я забыл пароль!</a>
+            </p>
+            <button class="button modal-login__button" type="submit">Войти</button>
+        </form>
+        <span class="modal-login__close">x</span>
+    </section>
+
+    <!-- Разметка попапа карта -->
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <span class="modal-map__close">x</span>
+    </section>
 </body>
 
 </html>
