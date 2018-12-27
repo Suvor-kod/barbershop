@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Страница товара</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="page-header header">
+        <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа Бородинский">
+        </a>
+        <nav class="main-nav">
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a href="info.html">Информация</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="news.html">Новости</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="price.html">Прайс-лист</a>
+                    </li>
+                    <li class="site-list__item site-list__item--active">
+                        <a href="catalog.html">Магазин</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="main-nav__list user-list">
+                    <li class="user-list__item">
+                        <a class="user-list__login" href="#login.html">Войти</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="catalog-page">
+        <h1 class="catalog-page__title">
+            Набор для путешествий «Baxter of California»
+        </h1>
+
+        <ul class="breadcrambs">
+            <li class="breadcrambs__item">
+                <a href="index.html" class="breadcrambs__link">Главная</a>
+            </li>
+            <li class="breadcrambs__item">
+                <a href="catalog.html" class="breadcrambs__link">Магазин</a>
+            </li>
+            <li class="breadcrambs__item">
+                <a href="catalog-item.html" class="breadcrambs__link">Средства для ухода</a>
+            </li>
+            <li class="breadcrambs__item breadcrambs__item--active">
+                <a>Набор для путешествий «Baxter of California»</a>
+            </li>
+        </ul>
+
+        <section class="product-photo">
+            <h1 class="visually-hidden">Изображения товара</h1>
+            <p class="product-photo__full">
+                <img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
+            </p>
+            <ul class="product-photo__list">
+                <li class="product-pgoto__item">
+                    <img src="img/product-small-1" width="140" height="149" alt="фото в анфас">
+                </li>
+                <li class="product-pgoto__item">
+                    <img src="img/product-small-2" width="140" height="149" alt="фото в профиль">
+                </li>
+                <li class="product-pgoto__item">
+                    <img src="img/product-small-3" width="140" height="149" alt="фото отдельной части">
+                </li>
+            </ul>
+        </section>
+
+        <section class="product-info">
+            <h1 class="visually-hidden">Описание товара</h1>
+            <p class="product-info__availability">Есть в наличии</p>
+            <p class="product-info__namber">Артикул: Dexter-ae</p>
+            <p class="product-info__text">
+                Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится
+                все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания,
+                увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным
+                подарком.
+            </p>
+
+            <p class="product-info__price">
+                <b>2 900 Р</b>
+                <a class="button" href="#">Купить</a>
+            </p>
+
+            <h3 class="product-info__title">В набор входят:</h3>
+            <ul class="product-info__list">
+                <li class="product-info__item">Средство для умывания (50 мл)</li>
+                <li class="product-info__item">Увлажняющий крем (50 мл)</li>
+                <li class="product-info__item">Крем для бритья (50 мл)</li>
+                <li class="product-info__item">Крем после бритья, шампунь (50 мл)</li>
+                <li class="product-info__item">Удобная кожаная косметичка</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p class="page-footer__contacts contacts">
+            Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            <a class="contacts__link" href="map.html">Как нас найти?</a><br>
+            Телефон: +7 (812) 666-02-66
+        </p>
+        <div class="page-footer__social social">
+            <b class="social__text">Давайте дружить</b>
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link social__link--vk" href="https://www.vk.com/">Мы в Вконтакте</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--fb" href="https://www.facebook.com/">Мы в Фейсбуке</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--inst" href="https://www.instagram.com/">Мы в Инстаграме</a>
+                </li>
+            </ul>
+        </div>
+        <p class="page-footer__copyryght copyryght">
+            <b class="copyryght__text">Разработано:</b>
+            <a class="button copyryght__button" href="https://htmlacademy.ru">
+                HTML academy
+            </a>
+        </p>
+    </footer>
+
+    <!-- Разметка попапа вход -->
+    <section class="modal modal-login">
+        <h2 class="modal-login__title">Личный кабинет</h2>
+        <p class="modal-login__text">Введите свой логин и пароль.</p>
+        <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="POST">
+            <label class="modal-login__label" for="">
+                <input class="modal-login__input" type="text" name="login" placeholder="Логин">
+            </label>
+            <label class="modal-login__label" for="">
+                <input class="modal-login__input" type="password" name="password" placeholder="Пароль">
+            </label>
+            <p class="modal-login__info">
+                <input class="visually-hidden" type="checkbox" name="remember">
+                <a class="modal-login__link" href="#">Я забыл пароль!</a>
+            </p>
+            <button class="button modal-login__button" type="submit">Войти</button>
+        </form>
+        <span class="modal-login__close">x</span>
+    </section>
+
+</body>
+
+</html>
